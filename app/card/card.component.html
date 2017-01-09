@@ -6,6 +6,7 @@
         <div class="card-footer" >
             <span *ngIf="!task.completed"><i class="fa fa-times" aria-hidden="true"></i>Not Complete</span>
             <span [hidden]="!task.completed"><i class="fa fa-check" aria-hidden="true"></i>Completed</span>
+            <!--2 differnt ways to complete objective. [hidden] will not remove from the DOM. *ngIf is preferred-->
         </div>
     </div>  
 </div>
